@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial;
+        text-align: justify;
+        font-size: smaller;
+    }
+    h2 {
+        color: yellow;
+    }
+    .div1 {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5px;
+        font-weight: bold ;
+        color: yellow;
+        padding-inline: 10%;
+        height: 20px;
+        background-color: #008375;
+    }
+    .div2 {
+        justify-content: space-between;
+        padding-inline: 10%;
+        display: flex;
+        height: 300px;
+        background-color: white;
+    }
+    .img2 {
+        height: 80%;
+    }
+    .div3 {
+        padding-inline: 10%;
+        padding-bottom: 40px;
+        background-color: #008375;
+    }
+    .div3 p {
+        color: white;
+    }
+    .logo-container {
+        position: relative;
+        top: -70px;
+        height: 80px;
+        display: flex;
+    }
+    .btn {
+        color: white;
+        text-align: center;
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+        border: none;
+        background-color: #008375;
+        margin: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.433);
+    }
+    .active-btn {
+        position: relative;
+        top: -10px;
+        height: 120px;
+        width: 120px;
+        border: 4px solid rgb(224, 224, 4);
+    }
+    .img-container {
+        height: 50px;
+    }
+    .img-container img {
+        height: 100%;
+    }
+    .div4 {
+        padding-inline: 10%;
+        padding-block: 40px;
+        background-color: white;
+    }
+    .div4 h2, p {
+        color: black;
+    }
+    .div5 {
+        text-align: center;
+        padding-block: 5px;
+        background-color: #00837643;
+    }
+
+
+    @media (max-width: 700px) {
+        body {
+            font-size: small;
+        }
+        .div2 {
+            justify-content: space-evenly;
+            padding-inline: 5%;
+            display: flex;
+            height: 200px;
+            background-color: white;
+        }
+        .btn {
+            color: white;
+            text-align: center;
+            height: 50px;
+            width: 50px;
+            border-radius: 5px;
+            border: none;
+            background-color: #008375;
+            margin: 10px;
+            font-size: xx-small;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.433);
+        }
+        .img-container {
+            height: 25px;
+        }
+        .active-btn {
+            position: relative;
+            top: -10px;
+            height: 70px;
+            width: 70px;
+            font-size: x-small;
+            border: 3px solid #b6b824;
+        }
+        .logo-container {
+            position: relative;
+            top: -35px;
+            height: 50px;
+            display: flex;
+        }
+    }
+    @media (max-width: 450px) {
+        .img2 {
+            height: 40%;
+        }
+    }
+</style>
+
+<body>
+    <div class="div1"><div>HOMECARE MANIPUR</div> <div>Ph.No.: +91 7005194248</div></div>
+    <div class="div2">
+        <img class="img1" src="img/img1.png">
+        <img class="img2" src="img/logo.png">
+    </div>
+    <div class="div3">
+        <div class="logo-container">
+            <button onclick="window.location.href='index.html';" class="btn"><div class="img-container"><img src="img/service.png"></div>Services</button>
+            <button onclick="window.location.href='exercise.html';" class="btn"><div class="img-container"><img src="img/exercise.png"></div>Exercise</button>
+            <button onclick="window.location.href='checkup.html'" class="btn active-btn"><div class="img-container"><img src="img/order.png"></div>Checkup</button>
+            <a href="https://Wa.me/+917005194248"><button class="btn"><div class="img-container"><img src="img/whatsapp.png"></div>Whatsapp</button></a>
+        </div>
+        
+        <div>
+            <h2>I. Introduction & Services:</h2>
+            <p>"HOMECARE" is the digital platform that make easier to contact with health expertise. We introduce this plateform to bring the society healthy. This service is more advantage for those who can't go to Hospital or those who has financial problem.  We cover the whole state of 'Manipur'. Now any person can call health expertise from their home. We also guide you the effective exercise and proper diet & nutrition.</p>
+            <p>In short we are the middleman between public and the health experts. We bring a means to check up your health for free. When a person need for health check up, he has to contact us through the "request form" or through whatsapp. We will send you health expertise to check any health problems as soon as possible. Follow the advice of the expertise, stay healthy and safe.</p>
+            <h2>II. How to contact us:</h2>
+            <p>STEP 1 - Click the above icon "Checkup".<br>
+                STEP 2 - Fill up the form & submit.<br>
+                STEP 3 - A response will come as a call or a message to your phone number. <br><br> Or
+            </p>
+            <p>Call to our number +91 7005194248 or send message in Whatsapp.</p>
+        </div>
+    </div>
+
+    <div class="div4">
+        <h2>III. Signs & Symptoms of some Serious Diseases and Health Problems:</h2>
+        <p>
+            •	Signs of a heart attack include pain, pressure, squeezing, or feeling of fullness in the center of the chest that lasts more than a few minutes; pain or discomfort in other areas of the upper body; shortness of breath; cold sweat; nausea; or lightheadedness.
+            <br><br>
+            •	Signs of a stroke include facial drooping, arm weakness, difficulty with speech, rapidly developing dizziness or balance, sudden numbness or weakness, loss of vision, confusion, or severe headache.
+            <br><br>
+            •	Symptoms of reproductive health problems include bleeding or spotting between periods; itching, burning, or irritation genital area; pain or discomfort during sex; heavy or painful menstrual bleeding; severe pelvic/abdominal pain; unusual vaginal discharge; feeling of fullness in the lower abdomen; and frequent urination or urinary urgency.
+            <br><br>
+            •	Symptoms of breast problems include nipple discharge, unusual breast tenderness or pain, breast or nipple skin changes, or lump or thickening in or near the breast or in the underarm area.
+            <br><br>
+            •	Symptoms of lung problems include coughing up blood, shortness of breath, difficulty breathing, chronic cough, repeated bouts of bronchitis or pneumonia, and wheezing.
+            <br><br>
+            •	Symptoms of the stomach or digestive problems include rectal bleeding, blood in the stool or black stools, changes in bowel habits or not being able to control bowels, constipation, diarrhea, heartburn or acid reflux, or vomiting blood.
+            <br><br>
+            •	Symptoms of bladder problems include difficult or painful urination, frequent urination, loss of bladder control, blood in urine, waking frequently at night to urinate or wetting the bed at night, or leaking urine.
+            <br><br>
+            •	Symptoms of skin problems include changes in skin moles, frequent flushing and redness of the face and neck, jaundice, skin lesions that don't go away or heal, new growths or moles on the skin, and thick, red skin with silvery patches.
+            <br><br>
+            •	Symptoms of muscle or joint problems include persistent muscle pains and body aches that are persistent, for example, numbness or tingling; pain, tenderness, stiffness, swelling, inflammation, or redness in or around joints; and decreased range of motion or loss of function of any joints or muscles.
+            <br><br>
+            •	Symptoms of emotional problems include anxiety, depression fatigue, feeling tense, flashbacks and nightmares, disinterest in regular activities, suicidal thoughts, hallucinations, or delusions.
+            <br><br>
+            •	Symptoms of headache problems (not including everyday tension headaches) include headaches that come on suddenly, "the worst headache of your life," and headaches associated with severe dizziness, nausea, vomiting, and inability to walk.
+            <br><br>
+            •	Symptoms of eating or weight problems include extreme thirst, dehydration, excessive hunger, losing weight without trying, binging, vomiting, starvation, preoccupation with food and weight, distorted body image, compulsive exercise, abuse of laxatives or diet pills, and depression.
+        </p>
+    </div>
+
+    <div class="div5">
+        <p>
+            www.homecaremanipur.com
+            <br><br>
+            Gmail- homecaremanipur@gmail.com
+            <br><br>
+            Phone No.- +91 7005194248 / +91 7085761667
+            <br><br>
+            Whatsapp- +91 7005194248
+        </p>
+    </div>
+    <div class="div1"></div>
+</body>
+</html>
