@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial;
+        text-align: justify;
+        font-size: smaller;
+    }
+    h2 {
+        color: yellow;
+    }
+    .div1 {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5px;
+        font-weight: bold ;
+        color: yellow;
+        padding-inline: 10%;
+        height: 20px;
+        background-color: #008375;
+    }
+    .div2 {
+        justify-content: space-between;
+        padding-inline: 10%;
+        display: flex;
+        height: 300px;
+        background-color: white;
+    }
+    .img2 {
+        height: 80%;
+    }
+    .div3 {
+        padding-inline: 10%;
+        padding-bottom: 40px;
+        background-color: #008375;
+    }
+    .div3 p {
+        color: white;
+    }
+    .logo-container {
+        position: relative;
+        top: -70px;
+        height: 80px;
+        display: flex;
+    }
+    .btn {
+        color: white;
+        text-align: center;
+        height: 100px;
+        width: 100px;
+        border-radius: 10px;
+        border: none;
+        background-color: #008375;
+        margin: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.433);
+    }
+    .active-btn {
+        position: relative;
+        top: -10px;
+        height: 120px;
+        width: 120px;
+        border: 4px solid rgb(224, 224, 4);
+    }
+    .img-container {
+        height: 50px;
+    }
+    .img-container img {
+        height: 100%;
+    }
+    .parent-form, .contact-form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form input, select, textarea {
+        margin-right: 5px;
+        margin-bottom: 5px;
+        width: 360px;
+        height: 30px;
+        border-radius: 3px;
+        border: none;
+        background-color: rgba(255, 255, 255, 0.689);
+    }
+    .contact-form select {
+        width: 364px;
+        height: 31px;
+    }
+    .contact-form textarea {
+        height: 100px;
+    }
+    #submit {
+        width: 204px;
+        background-color: #e98a05;
+        border: 2px solid rgba(202, 103, 4, 0.642);
+        color: white;
+        font-size: medium;
+        font-weight: bold;
+    }
+
+    .div4 b, p {
+        color: black;
+    }
+    .div5 {
+        margin-top: 3px;
+        text-align: center;
+        padding-block: 5px;
+        background-color: #00837643;
+    }
+
+
+    @media (max-width: 700px) {
+        body {
+            font-size: small;
+        }
+        .div2 {
+            justify-content: space-evenly;
+            padding-inline: 5%;
+            display: flex;
+            height: 200px;
+            background-color: white;
+        }
+        .btn {
+            color: white;
+            text-align: center;
+            height: 50px;
+            width: 50px;
+            border-radius: 5px;
+            border: none;
+            background-color: #008375;
+            margin: 10px;
+            font-size: xx-small;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.433);
+        }
+        .img-container {
+            height: 25px;
+        }
+        .active-btn {
+            position: relative;
+            top: -10px;
+            height: 70px;
+            width: 70px;
+            font-size: x-small;
+            border: 3px solid #b6b824;
+        }
+        .logo-container {
+            position: relative;
+            top: -35px;
+            height: 50px;
+            display: flex;
+        }
+    }
+    @media (max-width: 450px) {
+        .img2 {
+            height: 40%;
+        }
+    }
+</style>
+
+<body>
+    <div class="div1"><div>HOMECARE MANIPUR</div> <div>Ph.No.: +91 7005194248</div></div>
+    <div class="div2">
+        <img class="img1" src="img/img1.png">
+        <img class="img2" src="img/logo.png">
+    </div>
+    <div class="div3">
+        <div class="logo-container">
+            <button onclick="window.location.href='index.html';" class="btn"><div class="img-container"><img src="img/service.png"></div>Services</button>
+            <button onclick="window.location.href='exercise.html';" class="btn"><div class="img-container"><img src="img/exercise.png"></div>Exercise</button>
+            <button onclick="window.location.href='checkup.html'" class="btn active-btn"><div class="img-container"><img src="img/order.png"></div>Checkup</button>
+            <a href="https://Wa.me/+917005194248"><button class="btn"><div class="img-container"><img src="img/whatsapp.png"></div>Whatsapp</button></a>
+        </div>
+        
+        <div class="parent-form">
+            <h2>Request Checkup Form:</h2>
+                <form class="contact-form" method="post" action="https://script.google.com/macros/s/AKfycbxkereI9zYF0XYwqs9X4Ks3QcBraYgZcZZwxNSAjX-9BjNtMPKc2lsc62giJJbWL3s/exec" name="contact-form">   
+                    <input type="text" name="Name" placeholder="Patient's Name">
+                    <select id="state" name="State">
+                        <option value="Manipur">Manipur</option>
+                    </select>
+                    <select id="district" name="District">
+                        <option value="Bishnupur">Bishnupur</option>
+                        <option value="Chandel">Chandel</option>
+                        <option value="Churachandpur">Churachandpur</option>
+                        <option value="Imphal East">Imphal East</option>
+                        <option value="Imphal West">Imphal West</option>
+                        <option value="Jiribam">Jiribam</option>
+                        <option value="Kakching">Kakching</option>
+                        <option value="Kamjong">Kamjong</option>
+                        <option value="Kangpokpi">Kangpokpi</option>
+                        <option value="Noney">Noney</option>
+                        <option value="Pherzawl">Pherzawl</option>
+                        <option value="Senapati">Senapati</option>
+                        <option value="Tamenglong">Tamenglong</option>
+                        <option value="Tengnoupal">Tengnoupal</option>
+                        <option value="Thoubal">Thoubal</option>
+                        <option value="Ukhrul">Ukhrul</option>
+                    </select>
+                    <input type="text" name="Address Line 1" placeholder="Address Line 1">
+                    <input type="text" name="Number" placeholder="Phone Number">
+                    <input type="email" name="Email" placeholder="Email">
+                    <textarea name="Message" rows="7" placeholder="Tell your problems (Hindi/English/Manipuri)"></textarea>
+                    <input type="submit" value="Submit" id="submit">
+                </form>
+            <p>OR Call to our number +91 7005194248 or send message in Whatsapp.</p>
+        </div>
+    </div>
+
+    <div class="div5">
+        <p>
+            www.homecaremanipur.com
+            <br><br>
+            Gmail- homecaremanipur@gmail.com
+            <br><br>
+            Phone No.- +91 7005194248 / +91 7085761667
+            <br><br>
+            Whatsapp- +91 7005194248
+        </p>
+    </div>
+    <div class="div1"></div>
+</body>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxkereI9zYF0XYwqs9X4Ks3QcBraYgZcZZwxNSAjX-9BjNtMPKc2lsc62giJJbWL3s/exec'
+
+    const form = document.forms['contact-form']
+
+    form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("success tq"))
+        .then(() => { window.location.reload(); })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+
+</html>
