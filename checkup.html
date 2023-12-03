@@ -79,7 +79,6 @@
         align-items: center;
     }
     .contact-form input, select, textarea {
-        margin-right: 5px;
         margin-bottom: 5px;
         width: 360px;
         height: 30px;
@@ -233,8 +232,7 @@
     form.addEventListener('submit', e => {
         e.preventDefault()
         fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => alert("success tq"))
-        .then(() => { window.location.reload(); })
+        .then(() => { window.location.href='submited.html'})
         .catch(error => console.error('Error!', error.message))
     })
 </script>
